@@ -12,6 +12,9 @@
 		929F150413F1D27A0021F9FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 929F14FA13F1D27A0021F9FD /* InfoPlist.strings */; };
 		929F150513F1D27A0021F9FD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929F14FC13F1D27A0021F9FD /* MainMenu.xib */; };
 		929F150713F1D27A0021F9FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 929F150113F1D27A0021F9FD /* main.m */; };
+		929F150913F1D3A60021F9FD /* feather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 929F150813F1D3A60021F9FD /* feather.jpg */; };
+		929F150C13F1D4320021F9FD /* BHDraggableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929F150B13F1D4320021F9FD /* BHDraggableImageView.m */; };
+		929F150E13F1D61C0021F9FD /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 929F150D13F1D61C0021F9FD /* readme.md */; };
 		92B9DA6C13F1D1A5002F144D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B9DA6B13F1D1A5002F144D /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,10 @@
 		929F14FF13F1D27A0021F9FD /* BHDraggableImageView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BHDraggableImageView-Info.plist"; sourceTree = "<group>"; };
 		929F150013F1D27A0021F9FD /* BHDraggableImageView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BHDraggableImageView-Prefix.pch"; sourceTree = "<group>"; };
 		929F150113F1D27A0021F9FD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		929F150813F1D3A60021F9FD /* feather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feather.jpg; sourceTree = "<group>"; };
+		929F150A13F1D4320021F9FD /* BHDraggableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHDraggableImageView.h; sourceTree = "<group>"; };
+		929F150B13F1D4320021F9FD /* BHDraggableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHDraggableImageView.m; sourceTree = "<group>"; };
+		929F150D13F1D61C0021F9FD /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
 		92B9DA6713F1D1A5002F144D /* BHDraggableImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHDraggableImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B9DA6B13F1D1A5002F144D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		92B9DA6E13F1D1A5002F144D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,6 +53,8 @@
 		929F14F413F1D27A0021F9FD /* BHDraggableImageView */ = {
 			isa = PBXGroup;
 			children = (
+				929F150A13F1D4320021F9FD /* BHDraggableImageView.h */,
+				929F150B13F1D4320021F9FD /* BHDraggableImageView.m */,
 			);
 			path = BHDraggableImageView;
 			sourceTree = "<group>";
@@ -65,6 +74,7 @@
 		929F14FE13F1D27A0021F9FD /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				929F150813F1D3A60021F9FD /* feather.jpg */,
 				929F14FF13F1D27A0021F9FD /* BHDraggableImageView-Info.plist */,
 				929F150013F1D27A0021F9FD /* BHDraggableImageView-Prefix.pch */,
 				929F150113F1D27A0021F9FD /* main.m */,
@@ -75,6 +85,7 @@
 		92B9DA5C13F1D1A5002F144D = {
 			isa = PBXGroup;
 			children = (
+				929F150D13F1D61C0021F9FD /* readme.md */,
 				929F14F413F1D27A0021F9FD /* BHDraggableImageView */,
 				929F14F513F1D27A0021F9FD /* Other Classes */,
 				929F14FE13F1D27A0021F9FD /* Other Sources */,
@@ -163,6 +174,8 @@
 				929F150313F1D27A0021F9FD /* Credits.rtf in Resources */,
 				929F150413F1D27A0021F9FD /* InfoPlist.strings in Resources */,
 				929F150513F1D27A0021F9FD /* MainMenu.xib in Resources */,
+				929F150913F1D3A60021F9FD /* feather.jpg in Resources */,
+				929F150E13F1D61C0021F9FD /* readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +188,7 @@
 			files = (
 				929F150213F1D27A0021F9FD /* BHDraggableImageViewAppDelegate.m in Sources */,
 				929F150713F1D27A0021F9FD /* main.m in Sources */,
+				929F150C13F1D4320021F9FD /* BHDraggableImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
