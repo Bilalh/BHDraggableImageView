@@ -11,7 +11,6 @@
 @interface BHDraggableImageView()
 - (void)startDrag:(NSEvent *)event
 		 filename:(NSString*)filename;
-- (NSString*) makeFilename;
 @end
 
 @implementation BHDraggableImageView
