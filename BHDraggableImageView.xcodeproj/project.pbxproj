@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		929F150213F1D27A0021F9FD /* BHDraggableImageViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 929F14F713F1D27A0021F9FD /* BHDraggableImageViewAppDelegate.m */; };
+		929F150313F1D27A0021F9FD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 929F14F813F1D27A0021F9FD /* Credits.rtf */; };
+		929F150413F1D27A0021F9FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 929F14FA13F1D27A0021F9FD /* InfoPlist.strings */; };
+		929F150513F1D27A0021F9FD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929F14FC13F1D27A0021F9FD /* MainMenu.xib */; };
+		929F150713F1D27A0021F9FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 929F150113F1D27A0021F9FD /* main.m */; };
 		92B9DA6C13F1D1A5002F144D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B9DA6B13F1D1A5002F144D /* Cocoa.framework */; };
-		92B9DA7613F1D1A5002F144D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92B9DA7413F1D1A5002F144D /* InfoPlist.strings */; };
-		92B9DA7913F1D1A5002F144D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B9DA7813F1D1A5002F144D /* main.m */; };
-		92B9DA7C13F1D1A5002F144D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 92B9DA7A13F1D1A5002F144D /* Credits.rtf */; };
-		92B9DA7F13F1D1A5002F144D /* BHDraggableImageViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B9DA7E13F1D1A5002F144D /* BHDraggableImageViewAppDelegate.m */; };
-		92B9DA8213F1D1A5002F144D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B9DA8013F1D1A5002F144D /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		929F14F613F1D27A0021F9FD /* BHDraggableImageViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHDraggableImageViewAppDelegate.h; sourceTree = "<group>"; };
+		929F14F713F1D27A0021F9FD /* BHDraggableImageViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHDraggableImageViewAppDelegate.m; sourceTree = "<group>"; };
+		929F14F913F1D27A0021F9FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		929F14FB13F1D27A0021F9FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		929F14FD13F1D27A0021F9FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		929F14FF13F1D27A0021F9FD /* BHDraggableImageView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BHDraggableImageView-Info.plist"; sourceTree = "<group>"; };
+		929F150013F1D27A0021F9FD /* BHDraggableImageView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BHDraggableImageView-Prefix.pch"; sourceTree = "<group>"; };
+		929F150113F1D27A0021F9FD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92B9DA6713F1D1A5002F144D /* BHDraggableImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHDraggableImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B9DA6B13F1D1A5002F144D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		92B9DA6E13F1D1A5002F144D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		92B9DA6F13F1D1A5002F144D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		92B9DA7013F1D1A5002F144D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		92B9DA7313F1D1A5002F144D /* BHDraggableImageView-Info.plist */ = {isa = PBXFileReference; path = "BHDraggableImageView-Info.plist"; sourceTree = "<group>"; };
-		92B9DA7513F1D1A5002F144D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		92B9DA7713F1D1A5002F144D /* BHDraggableImageView-Prefix.pch */ = {isa = PBXFileReference; path = "BHDraggableImageView-Prefix.pch"; sourceTree = "<group>"; };
-		92B9DA7813F1D1A5002F144D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		92B9DA7B13F1D1A5002F144D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		92B9DA7D13F1D1A5002F144D /* BHDraggableImageViewAppDelegate.h */ = {isa = PBXFileReference; path = BHDraggableImageViewAppDelegate.h; sourceTree = "<group>"; };
-		92B9DA7E13F1D1A5002F144D /* BHDraggableImageViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHDraggableImageViewAppDelegate.m; sourceTree = "<group>"; };
-		92B9DA8113F1D1A5002F144D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +43,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		929F14F413F1D27A0021F9FD /* BHDraggableImageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BHDraggableImageView;
+			sourceTree = "<group>";
+		};
+		929F14F513F1D27A0021F9FD /* Other Classes */ = {
+			isa = PBXGroup;
+			children = (
+				929F14F613F1D27A0021F9FD /* BHDraggableImageViewAppDelegate.h */,
+				929F14F713F1D27A0021F9FD /* BHDraggableImageViewAppDelegate.m */,
+				929F14F813F1D27A0021F9FD /* Credits.rtf */,
+				929F14FA13F1D27A0021F9FD /* InfoPlist.strings */,
+				929F14FC13F1D27A0021F9FD /* MainMenu.xib */,
+			);
+			path = "Other Classes";
+			sourceTree = "<group>";
+		};
+		929F14FE13F1D27A0021F9FD /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				929F14FF13F1D27A0021F9FD /* BHDraggableImageView-Info.plist */,
+				929F150013F1D27A0021F9FD /* BHDraggableImageView-Prefix.pch */,
+				929F150113F1D27A0021F9FD /* main.m */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
 		92B9DA5C13F1D1A5002F144D = {
 			isa = PBXGroup;
 			children = (
-				92B9DA7113F1D1A5002F144D /* BHDraggableImageView */,
+				929F14F413F1D27A0021F9FD /* BHDraggableImageView */,
+				929F14F513F1D27A0021F9FD /* Other Classes */,
+				929F14FE13F1D27A0021F9FD /* Other Sources */,
 				92B9DA6A13F1D1A5002F144D /* Frameworks */,
 				92B9DA6813F1D1A5002F144D /* Products */,
 			);
@@ -77,29 +108,6 @@
 				92B9DA7013F1D1A5002F144D /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		92B9DA7113F1D1A5002F144D /* BHDraggableImageView */ = {
-			isa = PBXGroup;
-			children = (
-				92B9DA7D13F1D1A5002F144D /* BHDraggableImageViewAppDelegate.h */,
-				92B9DA7E13F1D1A5002F144D /* BHDraggableImageViewAppDelegate.m */,
-				92B9DA8013F1D1A5002F144D /* MainMenu.xib */,
-				92B9DA7213F1D1A5002F144D /* Supporting Files */,
-			);
-			path = BHDraggableImageView;
-			sourceTree = "<group>";
-		};
-		92B9DA7213F1D1A5002F144D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				92B9DA7313F1D1A5002F144D /* BHDraggableImageView-Info.plist */,
-				92B9DA7413F1D1A5002F144D /* InfoPlist.strings */,
-				92B9DA7713F1D1A5002F144D /* BHDraggableImageView-Prefix.pch */,
-				92B9DA7813F1D1A5002F144D /* main.m */,
-				92B9DA7A13F1D1A5002F144D /* Credits.rtf */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +160,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B9DA7613F1D1A5002F144D /* InfoPlist.strings in Resources */,
-				92B9DA7C13F1D1A5002F144D /* Credits.rtf in Resources */,
-				92B9DA8213F1D1A5002F144D /* MainMenu.xib in Resources */,
+				929F150313F1D27A0021F9FD /* Credits.rtf in Resources */,
+				929F150413F1D27A0021F9FD /* InfoPlist.strings in Resources */,
+				929F150513F1D27A0021F9FD /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,34 +173,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B9DA7913F1D1A5002F144D /* main.m in Sources */,
-				92B9DA7F13F1D1A5002F144D /* BHDraggableImageViewAppDelegate.m in Sources */,
+				929F150213F1D27A0021F9FD /* BHDraggableImageViewAppDelegate.m in Sources */,
+				929F150713F1D27A0021F9FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92B9DA7413F1D1A5002F144D /* InfoPlist.strings */ = {
+		929F14F813F1D27A0021F9FD /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92B9DA7513F1D1A5002F144D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		92B9DA7A13F1D1A5002F144D /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92B9DA7B13F1D1A5002F144D /* en */,
+				929F14F913F1D27A0021F9FD /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		92B9DA8013F1D1A5002F144D /* MainMenu.xib */ = {
+		929F14FA13F1D27A0021F9FD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92B9DA8113F1D1A5002F144D /* en */,
+				929F14FB13F1D27A0021F9FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		929F14FC13F1D27A0021F9FD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929F14FD13F1D27A0021F9FD /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -239,9 +247,10 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BHDraggableImageView/BHDraggableImageView-Prefix.pch";
-				INFOPLIST_FILE = "BHDraggableImageView/BHDraggableImageView-Info.plist";
+				GCC_PREFIX_HEADER = "Other Sources/BHDraggableImageView-Prefix.pch";
+				INFOPLIST_FILE = "Other Sources/BHDraggableImageView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -254,9 +263,10 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BHDraggableImageView/BHDraggableImageView-Prefix.pch";
-				INFOPLIST_FILE = "BHDraggableImageView/BHDraggableImageView-Info.plist";
+				GCC_PREFIX_HEADER = "Other Sources/BHDraggableImageView-Prefix.pch";
+				INFOPLIST_FILE = "Other Sources/BHDraggableImageView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +291,7 @@
 				92B9DA8713F1D1A5002F144D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
