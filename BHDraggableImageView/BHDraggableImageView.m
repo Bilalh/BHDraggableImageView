@@ -9,13 +9,16 @@
 #import "BHDraggableImageView.h"
 
 @interface BHDraggableImageView()
-- (void)startDrag:(NSEvent *)event;
+- (void)startDrag:(NSEvent *)event
+		 filename:(NSString*)filename;
+- (NSString*) makeFilename;
 @end
 
 @implementation BHDraggableImageView
 @synthesize downEvent;
 
 - (void)startDrag:(NSEvent *)event
+		 filename:(NSString*)filename
 {
 	NSPasteboard *pboard = [NSPasteboard pasteboardWithName:NSDragPboard];
 	// Write the image data to clipboard
@@ -27,7 +30,7 @@
 	// IF true write the data as a file as well which allows dragging the file e.g. to the desktop
 	BOOL writeAsFile = [[NSUserDefaults standardUserDefaults] boolForKey:@"writeDraggedImageAsFile"];
 	if (writeAsFile){
-		NSString *tempFileName = @"/tmp/cover.jpg";
+		NSString *tempFileName = [@"/tmp" stringByAppendingFormat:@"/%@.jpg", filename];		
 		NSBitmapImageRep *bits= [[[self image] representations ] objectAtIndex:0];
 		NSData *data = [bits representationUsingType: NSPNGFileType
 										  properties: nil];
@@ -77,9 +80,16 @@
 - (void)mouseDragged:(NSEvent *)event
 {
     if ([self image]) {
-        [self startDrag:self.downEvent];
+        [self startDrag:self.downEvent 
+			   filename:[self makeFilename] ];
 	}
 	self.downEvent = nil;
 }
+
+- (NSString*) makeFilename
+{
+	return @"cover";
+}
+
 
 @end
