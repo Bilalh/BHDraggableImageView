@@ -8,6 +8,6 @@ Example
 -------
 Run the project for a example.
 
-License
+Licence
 -------
-[Creative Commons with Attribution](http://example.com/)
+[Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/ "Full details")
