@@ -12,10 +12,10 @@
 /// other image source as a file
 @interface BHDraggableImageView : NSImageView {
 @private
-	NSEvent* downEvent;
+	NSEvent* __strong downEvent;
 }
 
-@property (assign) NSEvent* downEvent;
+@property (strong) NSEvent* downEvent;
 
 - (NSString*) makeFilename;
 

@@ -10,10 +10,10 @@
 
 @interface BHDraggableImageViewAppDelegate : NSObject <NSApplicationDelegate> {
 @private
-	NSWindow *window;
+	NSWindow *__strong window;
 }
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSImage  *cover;
+@property (strong) IBOutlet NSWindow *window;
+@property (strong) IBOutlet NSImage  *cover;
 
 @end
