@@ -6,7 +6,7 @@
 //  Copyright 2011  All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 /// NSImageView where the image can be dragged to any 
 /// other image source as a file
@@ -17,6 +17,11 @@
 
 @property (strong) NSEvent* downEvent;
 
-- (NSString*) makeFilename;
+@property (strong, nonatomic) NSString *fileName; // The name of the file that's written. Defaults to "Filename".
+
+@property BOOL writeDraggedImageAsFile; // Whether the image should be written to a file (able to be dragged to Finder). Defaults to NO.
+@property NSBitmapImageFileType writeImageFileType; // File type of image written to file. Defaults to NSTIFFFileType.
+
+@property (strong, nonatomic) NSString *imageCachePath; // Directory path to which drag images should be temporarily written. Defaults to "/tmp".
 
 @end

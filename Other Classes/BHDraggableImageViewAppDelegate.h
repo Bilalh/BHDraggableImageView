@@ -6,14 +6,11 @@
 //  Copyright 2011 St. Andrews KY16 9XW. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "BHDraggableImageView.h"
 
-@interface BHDraggableImageViewAppDelegate : NSObject <NSApplicationDelegate> {
-@private
-	NSWindow *__strong window;
-}
+@interface BHDraggableImageViewAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (strong) IBOutlet NSWindow *window;
-@property (strong) IBOutlet NSImage  *cover;
+@property (strong) IBOutlet BHDraggableImageView *imageView;
 
 @end

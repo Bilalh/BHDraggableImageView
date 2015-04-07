@@ -27,14 +27,13 @@
 			forType:NSTIFFPboardType];
 	
 	// IF true write the data as a file as well which allows dragging the file e.g. to the desktop
-	BOOL writeAsFile = [[NSUserDefaults standardUserDefaults] boolForKey:@"writeDraggedImageAsFile"];
-	if (writeAsFile){
-		NSString *tempFileName = [@"/tmp" stringByAppendingFormat:@"/%@.jpg", filename];		
-		NSBitmapImageRep *bits= [[[self image] representations ] objectAtIndex:0];
-		NSData *data = [bits representationUsingType: NSJPEGFileType
-										  properties: nil];
-		[data writeToFile: tempFileName
-			   atomically: NO];
+	if (self.writeDraggedImageAsFile){
+		NSString *tempFileName = [self.imageCachePath stringByAppendingFormat:@"/%@.%@", filename, [self extensionForType:self.writeImageFileType]];
+		NSBitmapImageRep *bits = [[[self image] representations] objectAtIndex:0];
+		NSData *data = [bits representationUsingType:self.writeImageFileType
+										  properties:nil];
+		[data writeToFile:tempFileName
+			   atomically:NO];
 		
 		[pboard addTypes:[NSArray arrayWithObject:NSFilenamesPboardType] owner:self];
 		[pboard setPropertyList:[NSArray arrayWithObject:tempFileName] 
@@ -42,10 +41,10 @@
 	}
 	
 	NSImage *scaledImage = [[self cell] objectValue];
-	NSImage *dragImage = [[NSImage alloc] initWithSize: [scaledImage size]];
+	NSImage *dragImage = [[NSImage alloc] initWithSize:[scaledImage size]];
     [dragImage lockFocus];
-    [[[self cell] objectValue] dissolveToPoint: NSMakePoint(0,0)
-									  fraction: .5];
+    [[[self cell] objectValue] dissolveToPoint:NSMakePoint(0,0)
+									  fraction:.5];
     [dragImage unlockFocus];
 	
 	NSPoint dragPoint = NSMakePoint(
@@ -80,14 +79,53 @@
 {
     if ([self image]) {
         [self startDrag:self.downEvent 
-			   filename:[self makeFilename] ];
+			   filename:self.fileName];
 	}
 	self.downEvent = nil;
 }
 
-- (NSString*) makeFilename
+
+- (NSString *)extensionForType:(NSBitmapImageFileType)imageFileType
 {
-	return @"cover";
+    switch (imageFileType) {
+        case NSTIFFFileType:
+            return @"tiff";
+            break;
+        case NSBMPFileType:
+            return @"bpm";
+            break;
+        case NSGIFFileType:
+            return @"gif";
+            break;
+        case NSJPEGFileType:
+            return @"jpg";
+            break;
+        case NSPNGFileType:
+            return @"png";
+            break;
+        case NSJPEG2000FileType:
+            return @"j2k";
+            break;
+        default:
+            return nil;
+            break;
+    }
+}
+
+- (NSString *)fileName
+{
+    if (!_fileName) {
+        return @"Filename";
+    }
+    return _fileName;
+}
+
+- (NSString *)imageCachePath
+{
+    if (!_imageCachePath) {
+        return @"/tmp";
+    }
+    return _imageCachePath;
 }
 
 
