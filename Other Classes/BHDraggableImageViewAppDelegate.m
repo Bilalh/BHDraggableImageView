@@ -10,8 +10,6 @@
 
 @implementation BHDraggableImageViewAppDelegate
 
-@synthesize window;
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     self.imageView.image = [NSImage imageNamed:@"feather.jpg"];

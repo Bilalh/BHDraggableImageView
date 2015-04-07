@@ -8,10 +8,7 @@
 
 #import "BHDraggableImageView.h"
 
-@interface BHDraggableImageViewAppDelegate : NSObject <NSApplicationDelegate> {
-@private
-	NSWindow *__strong window;
-}
+@interface BHDraggableImageViewAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (strong) IBOutlet NSWindow *window;
 @property (strong) IBOutlet BHDraggableImageView *imageView;
