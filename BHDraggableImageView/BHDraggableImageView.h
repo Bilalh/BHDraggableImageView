@@ -17,6 +17,6 @@
 
 @property (strong) NSEvent* downEvent;
 
-- (NSString*) makeFilename;
+@property (strong, nonatomic) NSString *fileName;
 
 @end

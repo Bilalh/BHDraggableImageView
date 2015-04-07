@@ -80,14 +80,17 @@
 {
     if ([self image]) {
         [self startDrag:self.downEvent 
-			   filename:[self makeFilename] ];
+			   filename:self.fileName];
 	}
 	self.downEvent = nil;
 }
 
-- (NSString*) makeFilename
+- (NSString *)fileName
 {
-	return @"cover";
+    if (!_fileName) {
+        return @"Filename";
+    }
+    return _fileName;
 }
 
 
