@@ -17,9 +17,9 @@
 
 @property (strong) NSEvent* downEvent;
 
-@property (strong, nonatomic) NSString *fileName;
+@property (strong, nonatomic) NSString *fileName; // The name of the file that's written. Defaults to "Filename".
 
-@property BOOL writeDraggedImageAsFile;
-@property NSBitmapImageFileType writeImageFileType;
+@property BOOL writeDraggedImageAsFile; // Whether the image should be written to a file (able to be dragged to Finder). Defaults to NO.
+@property NSBitmapImageFileType writeImageFileType; // File type of image written to file. Defaults to NSTIFFFileType.
 
 @end
