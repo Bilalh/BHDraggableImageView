@@ -19,4 +19,6 @@
 
 @property (strong, nonatomic) NSString *fileName;
 
+@property BOOL writeDraggedImageAsFile;
+
 @end

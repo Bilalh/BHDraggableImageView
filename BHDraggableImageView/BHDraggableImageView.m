@@ -27,8 +27,7 @@
 			forType:NSTIFFPboardType];
 	
 	// IF true write the data as a file as well which allows dragging the file e.g. to the desktop
-	BOOL writeAsFile = [[NSUserDefaults standardUserDefaults] boolForKey:@"writeDraggedImageAsFile"];
-	if (writeAsFile){
+	if (self.writeDraggedImageAsFile){
 		NSString *tempFileName = [@"/tmp" stringByAppendingFormat:@"/%@.jpg", filename];		
 		NSBitmapImageRep *bits= [[[self image] representations ] objectAtIndex:0];
 		NSData *data = [bits representationUsingType: NSJPEGFileType

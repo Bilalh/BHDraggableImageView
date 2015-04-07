@@ -10,11 +10,11 @@
 
 @implementation BHDraggableImageViewAppDelegate
 
-@synthesize window, cover;
+@synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	self.cover = [NSImage imageNamed:@"feather.jpg"];
+    self.imageView.image = [NSImage imageNamed:@"feather.jpg"];
 }
 
 @end
