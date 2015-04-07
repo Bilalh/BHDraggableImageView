@@ -29,11 +29,11 @@
 	// IF true write the data as a file as well which allows dragging the file e.g. to the desktop
 	if (self.writeDraggedImageAsFile){
 		NSString *tempFileName = [self.imageCachePath stringByAppendingFormat:@"/%@.%@", filename, [self extensionForType:self.writeImageFileType]];
-		NSBitmapImageRep *bits= [[[self image] representations ] objectAtIndex:0];
-		NSData *data = [bits representationUsingType: self.writeImageFileType
-										  properties: nil];
-		[data writeToFile: tempFileName
-			   atomically: NO];
+		NSBitmapImageRep *bits = [[[self image] representations] objectAtIndex:0];
+		NSData *data = [bits representationUsingType:self.writeImageFileType
+										  properties:nil];
+		[data writeToFile:tempFileName
+			   atomically:NO];
 		
 		[pboard addTypes:[NSArray arrayWithObject:NSFilenamesPboardType] owner:self];
 		[pboard setPropertyList:[NSArray arrayWithObject:tempFileName] 
@@ -41,10 +41,10 @@
 	}
 	
 	NSImage *scaledImage = [[self cell] objectValue];
-	NSImage *dragImage = [[NSImage alloc] initWithSize: [scaledImage size]];
+	NSImage *dragImage = [[NSImage alloc] initWithSize:[scaledImage size]];
     [dragImage lockFocus];
-    [[[self cell] objectValue] dissolveToPoint: NSMakePoint(0,0)
-									  fraction: .5];
+    [[[self cell] objectValue] dissolveToPoint:NSMakePoint(0,0)
+									  fraction:.5];
     [dragImage unlockFocus];
 	
 	NSPoint dragPoint = NSMakePoint(
