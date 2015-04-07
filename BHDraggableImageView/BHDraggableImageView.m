@@ -28,7 +28,7 @@
 	
 	// IF true write the data as a file as well which allows dragging the file e.g. to the desktop
 	if (self.writeDraggedImageAsFile){
-		NSString *tempFileName = [self.imageCachePath stringByAppendingFormat:@"/%@.jpg", filename];
+		NSString *tempFileName = [self.imageCachePath stringByAppendingFormat:@"/%@.%@", filename, [self extensionForType:self.writeImageFileType]];
 		NSBitmapImageRep *bits= [[[self image] representations ] objectAtIndex:0];
 		NSData *data = [bits representationUsingType: self.writeImageFileType
 										  properties: nil];
@@ -82,6 +82,34 @@
 			   filename:self.fileName];
 	}
 	self.downEvent = nil;
+}
+
+
+- (NSString *)extensionForType:(NSBitmapImageFileType)imageFileType
+{
+    switch (imageFileType) {
+        case NSTIFFFileType:
+            return @"tiff";
+            break;
+        case NSBMPFileType:
+            return @"bpm";
+            break;
+        case NSGIFFileType:
+            return @"gif";
+            break;
+        case NSJPEGFileType:
+            return @"jpg";
+            break;
+        case NSPNGFileType:
+            return @"png";
+            break;
+        case NSJPEG2000FileType:
+            return @"j2k";
+            break;
+        default:
+            return nil;
+            break;
+    }
 }
 
 - (NSString *)fileName
