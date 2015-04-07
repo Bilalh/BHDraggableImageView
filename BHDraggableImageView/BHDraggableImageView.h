@@ -22,4 +22,6 @@
 @property BOOL writeDraggedImageAsFile; // Whether the image should be written to a file (able to be dragged to Finder). Defaults to NO.
 @property NSBitmapImageFileType writeImageFileType; // File type of image written to file. Defaults to NSTIFFFileType.
 
+@property (strong, nonatomic) NSString *imageCachePath; // Directory path to which drag images should be temporarily written. Defaults to "/tmp".
+
 @end
