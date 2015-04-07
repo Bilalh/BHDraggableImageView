@@ -20,5 +20,6 @@
 @property (strong, nonatomic) NSString *fileName;
 
 @property BOOL writeDraggedImageAsFile;
+@property NSBitmapImageFileType writeImageFileType;
 
 @end

@@ -30,7 +30,7 @@
 	if (self.writeDraggedImageAsFile){
 		NSString *tempFileName = [@"/tmp" stringByAppendingFormat:@"/%@.jpg", filename];		
 		NSBitmapImageRep *bits= [[[self image] representations ] objectAtIndex:0];
-		NSData *data = [bits representationUsingType: NSJPEGFileType
+		NSData *data = [bits representationUsingType: self.writeImageFileType
 										  properties: nil];
 		[data writeToFile: tempFileName
 			   atomically: NO];
